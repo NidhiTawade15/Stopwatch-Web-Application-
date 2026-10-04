@@ -1,0 +1,60 @@
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+body {
+    min-height: 100vh; display: flex; justify-content: center; align-items: center; font-family: Arial, sans-serif; background: linear-gradient(135deg, #24105f, #5b21b6);
+    color: white;
+}
+.container {
+    width: 90%; max-width: 550px; text-align: center;
+}
+h1 {
+    margin-bottom: 25px; font-size: 40px; letter-spacing: 3px;
+}
+.stopwatch {
+    padding: 35px 25px; border-radius: 20px;background: rgba(255, 255, 255, 0.12); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); backdrop-filter: blur(10px);
+}
+#display {
+    font-size: 48px; font-weight: bold; margin-bottom: 30px; letter-spacing: 2px;
+}
+.buttons {
+    display: flex; justify-content: center; flex-wrap: wrap; gap: 12px;
+}
+button {
+    padding: 12px 22px; border: none; border-radius: 8px; font-size: 16px;font-weight: bold; cursor: pointer; transition: 0.3s;
+}
+button:hover {
+    transform: scale(1.05);
+}
+#startBtn {
+    background: #22c55e; color: rgb(255, 255, 255);
+}
+#pauseBtn {
+    background: #f59e0b; color: rgb(255, 255, 255);
+}
+#lapBtn {
+    background: #3b82f6; color: rgb(255, 255, 255);
+}
+#resetBtn {
+    background: #ef4444;  color: rgb(255, 255, 255);
+}
+h2 {
+    margin-top: 30px; margin-bottom: 15px;
+}
+#laps {
+    list-style: none; max-height: 200px; overflow-y: auto;
+}
+#laps li {
+    padding: 10px; margin: 7px 0; border-radius: 8px; background: rgba(255, 255, 255, 0.1);
+}
+@media (max-width: 500px) {
+h1 {
+        font-size: 30px;
+    }
+#display {
+        font-size: 34px;
+    }
+button {
+        padding: 10px 16px; font-size: 14px;
+    }
+}
